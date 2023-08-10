@@ -39,7 +39,7 @@ export const Comment = ({
         {
           replies.map((reply) => (
             <Reply
-              id = {reply.username}
+              key = {reply.username}
               userImagePath = {reply.userImagePath}
               username = {reply.username}
               replyText = {reply.replyText}
