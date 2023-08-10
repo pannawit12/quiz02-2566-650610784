@@ -17,6 +17,7 @@ export default function HomePage() {
         {/* Post Owner Example*/}
         <div className="vstack gap-3">
           <PostOwner
+            id = {650610784}
             userImagePath = "/profileImages/myProfile.jpg"
             username = "Pannawit Setsiriwanit 650610784"
             postText = "Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207"
@@ -26,6 +27,7 @@ export default function HomePage() {
           {
             comments.map((comment => (
               <Comment
+                id = {comment.username}
                 userImagePath = {comment.userImagePath}
                 username = {comment.username}
                 commentText = {comment.commentText}
